@@ -6,11 +6,11 @@ You will have to mark a class with the [DataContract](https://msdn.microsoft.com
 
 And then you can use:
 
-'''csharp
+```csharp
 string jsonStr = Json.Serialize(yourObject);
 
 // If you use the JsonExtensions, you can also do
 jsonStr = yourObject.ToJson();
 
 yourObject = Json.Deserialize<YourObjectClass>(jsonStr);
-'''
+```
